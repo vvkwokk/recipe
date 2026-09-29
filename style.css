@@ -1,0 +1,117 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(96, 57, 89);
+    color: #2b1e3a;
+    line-height: 1.6;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.recipe-card {
+    background-color: rgb(250, 252, 240);
+    border: 2px dotted #b3ad70;
+    padding: 40px;
+    max-width: 680px;
+    width: 100%;
+}
+
+.recipe-card:hover {
+    box-shadow: 0 15px 30px #acef04;
+}
+
+h1 {
+    font-family: "bulletin-typewriter-mn", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    color: #5d3d7c;
+    font-size: 50px;
+    margin-bottom: 24px;
+    text-align: center;
+    transition: color 0.3s ease, transform 0.2s ease;
+    cursor: default;
+}
+
+h1:hover {
+    color: #acef04;
+    transform: scale(3.5);
+}
+
+h2 {
+    font-family: "bulletin-typewriter-mn", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    color: #724e96;
+    font-size: 20px;
+    margin-top: 32px;
+    margin-bottom: 12px;
+    border-bottom: 2px dotted #7a04ef;
+    padding-bottom: 6px;
+}
+
+.recipe-meta {
+    background-color: #f6ebf2;
+    padding: 16px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 24px;
+    margin-bottom: 24px;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+}
+
+.recipe-meta:hover {
+    background-color: #acef04;
+    transform: scale(3.5);
+}
+
+.recipe-meta p {
+    margin: 0;
+    font-size: 14px;
+    color: #4a3860;
+}
+
+.recipe-meta strong {
+    color: #5d3d7c;
+}
+
+ul, ol {
+    margin-left: 20px;
+    margin-top: 8px;
+}
+
+li {
+    margin-bottom: 10px;
+    padding-left: 6px;
+    cursor: pointer;
+    transition: transform 0.2s ease, opacity 0.2s ease, color 0.2s ease;
+    user-select: none;
+}
+
+li:hover {
+    transform: translateX(10px);
+    transform: scale(3.5);
+    color: #acef04;
+}
+
+li:active {
+    transform: translateX(10px) scale(0.98);
+}
+
+li::marker {
+    color: #8e72a8;
+    font-weight: bold;
+    transition: color 0.2s ease;
+}
+
+li:hover::marker {
+    color: #acef04;
+    transform: scale(3.5);
+}
+
+p {
+    font-size: 14px;
+    color: #3b2d4c;
+}
